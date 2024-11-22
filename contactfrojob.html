@@ -1,0 +1,284 @@
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+     <title>Our Services | The Artistic</title>
+     <!-- cdnjs -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+      
+     <!-- bootstrap css -->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    
+     <!-- bootstrap js -->
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+     
+     <!-- Swiper -->
+     <link
+      rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+    
+      <!-- aos css -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+      
+    <!-- aos js -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
+    <!-- animate css -->
+    <link rel="stylesheet" href="css/animate.css">
+    
+    <!-- aniamtion js -->
+     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
+     <!-- styling navbar swiper slider cards -->
+    <link rel="stylesheet" href="css/contactforjob.css">
+     
+    <!-- link picture -->
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+    
+    <!-- Link Swiper's CSS -->
+      <link
+      rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
+
+       <!-- jquery cdn  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" referrerpolicy="no-referrer"></script>
+      <!-- navbar short css start -->
+      <style>
+        .ssi:hover #h1{
+          opacity: 1;
+          
+        }
+      </style>
+  </head>
+  <body data-aos="fade-zoom-in"
+  data-aos-easing="ease-in-back"
+  data-aos-delay="300"
+  data-aos-offset="0">
+
+   <!-- loader start -->
+   <!-- <div class="preloader">
+    <img src="images/book_preloader.gif" alt="">
+  </div> -->
+  <!-- loader end -->
+
+     <header>
+      <div data-aos="zoom-in" class="nav">
+          <nav class="navbar navbar-expand-lg navbar-light bg-*" id="nav">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#"><img src="images/logo.png" alt=""></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+              </button>
+                    <div  class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                         <li class="nav-item">
+                         <a  class="nav-link active text-light" href="home.html">Home</a>
+                         </li>
+                         <li class="nav-item">
+                         <a style="width: 100%;" class="nav-link text-light" href="try.html">Contact for job</a>
+                         </li>
+                         <li class="nav-item">
+                           <a style="width: 100%;" class="nav-link text-light" href="ourservices.html">Our Services</a>
+                           </li>
+                             <li class="nav-item">
+                               <a style="width: 100%;" class="nav-link text-light" href="ourstory.html">Our Story</a>
+                               </li>
+                           <li class="nav-item">
+                             <a id="loginbutton" class="nav-link text-light" href="login.html">Login</a>
+                             </li>
+                     </ul>
+                    </div>
+               </div>
+          </nav>
+     </div>
+     <script>
+       AOS.init();
+  </script>
+         <!-- navbar end -->
+
+         <!-- navbar js start -->
+<script>
+  window.addEventListener("scroll",function(){
+      var nav = document.getElementById('nav');
+      var txt = document.getElementsByClassName('nav-link');
+      win = window.scrollY>0;
+      nav.classList.toggle('nav1',win);
+      for(i=0 ; i<txt.length ; i++){
+        txt[i].classList.toggle('text-dark',win)
+      }
+    })
+</script>
+<!-- navbar js end -->
+
+    <!-- click function js start -->
+        <script>
+            $(document).ready(function () {
+                $('#icon').click(function () {
+                    $('ul').toggleClass('show');
+                })
+            })
+        </script>
+            <!-- click function js end -->
+
+            <!-- function validation start -->
+            <script>
+                function validate(){
+                    
+                    var name =document.myform.name;
+                    var email=document.myform.email;
+                    var contact=document.myform.contact;
+                    var gender=document.myform.gender;
+                    var project=document.myform.project;
+                    var cv=document.myform.cv;
+                    var reason=document.myform.reason;
+                    var img=document.myform.img;
+                
+                    
+                    if(name.value.length <=0){
+                        alert("name is required");
+                        name.focus();
+                        return false;
+                }
+                if(email.value.length <=0){
+                        alert("Email is required");
+                        email.focus();
+                         return false;
+                }
+                if(contact.value.length <=0){
+                        alert("Phone number is required");
+                        contact.focus();
+                        return false;
+                         
+                }
+                if(gender.value.length <=0){
+                        alert("Gender is required");
+                        gender.focus();
+                        return false;
+                }
+                if(project.value.length <=0){
+                        alert("project is required");
+                        project.focus();
+                        return false;
+                }
+                if(cv.value.length <=0){
+                        alert("choose cv");
+                        cv.focus();
+                        return false;
+                }
+                if(reason.value.length <=0){
+                        alert("plz fil reason");
+                        reason.focus();
+                        return false;
+                }
+                if(img == null){
+                        alert("plz select img");
+                        img.focus();
+                        return false;
+                }	
+                return false;
+                }
+                function validateString(id){
+                    var element = document.getElementById(id);
+                     var regExp =/^[a-zA-Z]+$/;
+                     if(!regExp.test(element.value)){
+                         alert("Enter string value");
+                         element.style.border = "2px solid red";
+                         return false;
+                     }
+                     element.style.border = "2px solid green";
+                }
+                        function validateEmail(id){
+                    var element = document.getElementById(id);
+                     var regExp =/^[a-zA-Z0-9._]+@[a-zA-Z0-9._]+\.[a-zA-Z]{2,4}$/;
+                     if(!regExp.test(element.value)){
+                         alert("Enter validate email");
+                         element.style.border = "2px solid red";
+                         return false;
+                     }
+                     element.style.border = "2px solid green";
+                }
+                       function validateNumber(id){
+                        var element = document.getElementById(id);
+                         var regExp = /^[0-9]{10}$/;
+                         if(!regExp.test(element.value)){
+                         alert("Enter Number");
+                         element.style.border = "2px solid red";
+                         return false;
+                     }
+                     element.style.border = "2px solid green";
+                }
+                </script>
+                <!-- function validation end -->
+                
+                <div class="text-box">
+                  <h1>Contact For Job</h1>
+                </div>
+                <img class="ourservicesimg" src="images/forjob.jpg" alt="">
+            <div class="text-box1">
+              <h4>Work With Us !</h4>
+            </div>
+     <div class="box">             
+<div class="profile-pic-div" name="img">
+  <img src="pic.jpg" id="photo">
+  <input type="file"id="file"/>
+  <label for="file"id="uploadBtn">choose photo</label>
+  </div>
+  
+  <div class="paragraph">
+  <h3>Add Your Self Image</h3>
+  <p>Dear [Candidate Name], We are pleased to offer you the [full-time, part-time, etc.] position of [job title] at [company name] with a start date of [start date], contingent upon [background checks, reference checks, etc.]. You will be reporting directly to [manager/supervisor name] at [workplace location].</p>
+  </div>
+                    <form name="myform" method="post" onsubmit="validate()">
+                    <div class="form">
+                        <div class="form-group">
+                          <label for="usr">Name:</label>
+                          <input type="text" name="name" class="form-control" id="usr" placeholder="Enter you Name" onblur="validateString(this.id)">
+                          <span id="username" class="text-danger"></span>
+                        </div>
+                        <!-- <br />
+                        <div class="form-group">
+                          <label for="mail">Email:</label>
+                          <input type="text" name="email" class="form-control" id="email" placeholder="Enter your Email" autocomplete="off" onblur="validateEmail(this.id)">
+                        </div>
+                        <br />
+                        <div class="form-group">
+                          <label for="num">Phone No:</label>
+                          <input type="text"  name="contact" class="form-control" id="contact"  placeholder="Enter your Phone No" autocomplete="off" onblur="validateNumber(this.id)" max="10">
+                        </div>
+                        <br />
+                        <div class="form-froup">
+                        <label for="gender" > Select you gender</label><br>
+                         <input type="radio" name="gender" value="Male" />Male
+                           <input type="radio" name="gender" value="Female" />Female
+                    
+                         
+                    </div> -->
+                    <!-- <br />
+                    <div class="form-group">
+                       <label for="gen">Any Recent Project you do:</label>
+                        <input type="radio" name="project" value="yes" />Yes
+                           <input type="radio" name="project" value="no" />No
+                    
+                      </div>
+                      <br />
+                    <div class="input_field">
+                    <label>Upload CV:</label>
+                    <input type="file" name="cv" class="input" />
+                    </div>
+                    <br />
+                    <div class="input_field">
+                    <label>Why do you apply for this Job?</label>
+                    <textarea rows="10" cols="30" name="reason" class="input" placeholder=" Reason"></textarea>
+                    </div>
+                    <br />
+                    <div class="btn">
+                    <input type="submit" name="submit" value="submit"  />
+                    </div>
+                    </div>
+                     -->
+                    </form>
+     </div>
+                    <script src="js/contactforjob.js">
+                    </script>
+</body>
+</html>
